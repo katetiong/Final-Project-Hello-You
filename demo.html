@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Get Started</title>
+</head>
+<body>
+  <div class="hero-container">
+    <div class="header-container">
+      <a href="index.html" class="logo">HELLO YOU</a>
+      <div class="smile"></div>
+      <a href="demo.html" class="demo-button">VIEW DEMO</a>
+    </div>
+    <div class="hello-name">
+      <div class="hello">HELLO YOU</div>
+      <div class="welcome-text">
+        <p>Welcome to Day 1!</p>
+        <p>We'll help you get started by:</p>
+        <ul class="welcome-list">
+          <li>Getting basic access.</li>
+          <li>Scheduling your virtual coffee/meeting a colleague.</li>
+          <li>Tell us a bit of yourself.</li>
+          <li>Get lunch on us!</li>
+        </ul>
+        <a href="#checklist-container" class="get-started-button">LET'S GET STARTED</a>
+      </div>
+    </div>
+    <div id="checklist-container">
+      <div class="checklist-title">
+        <h1>TO-DO LIST</h1>
+      </div>
+      <form class="checklist-contents">
+	      <label><input class="checkbox" type="checkbox"> <span>Create a company email.</span></label>
+        <label><input class="checkbox" type="checkbox"> <span>Have you got access to workspace?</span></label>
+        <label><input class="checkbox" type="checkbox"> <span>Do you need extra devices? <a href="#" class="checklist-links">Book it here</a> to get it delivered to your home.</span></label>
+        <label><input class="checkbox" type="checkbox"> <span>Download <a href="https://slack.com/intl/en-au/help/articles/207677868-Download-Slack-for-Mac" class="checklist-links">Slack</a>. Slack is a group messenger app that we'll be using throughout the course to communicate with your classmates and instructors.</span></label>
+        <label><input class="checkbox" type="checkbox"> <span>Download <a href="https://zoom.us/download" class="checklist-links">Zoom</a>. Zoom is a cloud-based video communications app that allows you to set up virtual video and audio conferencing, screen-sharing, and other collaborative capabilities within your team.</span></label>
+        <a href="#virtual-coffee" class="next-button">NEXT</a>
+      </form>
+    </div>
+    <div id="virtual-coffee">
+      <div class="coffee-title">
+        <h1>GRAB A VIRTUAL COFFEE!</h1>
+        <h3>Meet a mentor or two or three. Get to know them while learning more about your colleagues and our work culture.</h3>
+      </div>
+      <div class="mentor-container">
+        <a href="#" class="mentor img-1" onclick="mentorDetails1()">
+          <div class="overlay" id ="mentorOne">
+            <div class="text">Mavis Chen</div>
+          </div>
+        </a>
+        <a href="#" class="mentor img-2" onclick="mentorDetails2()">
+          <div class="overlay" id ="mentorTwo">
+            <div class="text">Dominic Theo</div>
+          </div>
+        </a>
+        <a href="#" class="mentor img-3" onclick="mentorDetails3()">
+          <div class="overlay" id ="mentorThree">
+            <div class="text">Cassie Lang</div>
+          </div>
+        </a>
+      </div>
+      <a href="#about-you-container" class="next-button-2">NEXT</a>
+    </div>
+    <div id="about-you-container">
+      <h1 class="about-you-title">TELL US MORE ABOUT YOURSELF!</h1>
+      <form class="aboutyou">
+        <textarea id="aboutYourself" class="about-yourself" rows="4" cols="50" placeholder="Fun facts, crazy experiences, we want to know more..."></textarea>
+        <a href="#lunchContainer" class="about-button">Submit</a>
+      </form>
+    </div>
+    <div class="lunch-container" id ="lunchContainer">
+      <h1 class="lunch-title">GRAB A LUNCH ON US!</h1>
+      <div class="lunch-img"></div>
+      <button class="lunch-button" onclick="openForm()">FREE LUNCH</button>
+    </div>
+    <div id="lunchWindow">
+      <div id="lunchMessage">
+        <p>Welcome to our team, we would love to get you lunch for free.</p>
+        <div class="form-popup" id="lunchForm">
+          <form class="form-container">
+            <h1>Lunch On Us!</h1>
+            <label for="email"><b>Email</b></label><br/>
+            <input type="text" placeholder="Enter Email" name="email" required><br/>
+            <br/>
+            <div class="address-container">
+              <label for="address"><b>Address</b></label><br/>
+              <input type="text" placeholder="Address line 1" name="address line 1" required><br/>
+              <input type="text" placeholder="Address line 2" name="address line 2" required><br/>
+              <div class="postcode-state">
+                <input type="text" placeholder="Postcode" name="postcode" required><br/>
+                <input type="text" placeholder="State" name="state" required><br/>
+              </div>
+            </div>
+            <br/>
+            <div class="diet-checkbox">
+              <div class="dietaryPref">
+                <label for="dietaryPref"><b>Dietary Preferences:</b></label>
+                <br/>
+                <input type="checkbox" name="deitaryPref" value="vegan"/> Vegan<br />
+                <input type="checkbox" name="deitaryPref" value="vegetarian"/> Vegetarian<br />
+                <input type="checkbox" name="deitaryPref" value="Kosher"/> Kosher<br />
+                <input type="checkbox" name="deitaryPref" value="glutenfree"/> Gluten Free<br />
+                <input type="checkbox" name="deitaryPref" value="lactosefree"/> Lactose Free<br />
+              </div>
+              <br/>
+              <div class="allergies">
+                <label for="allergies"><b>Allergies:</b></label>
+                <br/>
+                <input type="checkbox" name="allergies" value="nuts"/> Nuts<br/>
+                <input type="checkbox" name="allergies" value="eggs"/> Eggs<br/>
+                <input type="checkbox" name="allergies" value="lactose"/> Lactose<br/>
+                <input type="checkbox" name="allergies" value="shellfish"/> Shellfish<br/>
+                <input type="checkbox" name="allergies" value="wheat"/> Wheat<br/>
+              </div>
+            </div>
+            <br/>
+            <button type="submit" class="btn">Feed Me</button>
+            <button type="button" class="btn close" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal-window" id ="mentorMessageOne">
+      <div class="modal-message">
+        <div class="message-left">
+          <p>"I have a passion for strategic thinking, design and innovation. I love the process of speaking to customers, deeply understanding their needs, and seeing the possibilities for how how we can transform teams to take brave choices that deliver on customer insights." - Mavis </p>
+        </div>
+        <div class="message-right">
+          <form>
+            <div class="close-icon">
+              <img src="img/close.svg" alt="close-icon" onclick="closeDetails()">
+            </div>
+            <br/>
+            <label for="title"><b>Title</b></label><br/>
+            <input type="text" name="Title" required><br/>
+            <br/>
+            <textarea id="emailMentor" class="email-mentor" placeholder="Message" rows="10" cols="30"></textarea>
+            <button type="submit" class="modal-btn">Get in touch</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal-window" id ="mentorMessageTwo">
+      <div class="modal-message">
+        <div class="message-left">
+          <p>"A web developer especially keen for front-end space. Having great passion for cutting-edge technologies and willing to take new challenges." - Dom </p>
+        </div>
+        <div class="message-right">
+          <form>
+            <div class="close-icon">
+              <img src="img/close.svg" alt="close-icon" onclick="closeDetails()">
+            </div>
+            <br/>
+            <label for="title"><b>Title</b></label><br/>
+            <input type="text" name="Title" required><br/>
+            <br/>
+            <textarea id="emailMentor" class="email-mentor" placeholder="Message" rows="10" cols="30"></textarea>
+            <button type="submit" class="modal-btn">Get in touch</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal-window" id ="mentorMessageThree">
+      <div class="modal-message">
+        <div class="message-left">
+          <p>"I love great design. Design which is accessible, empathetic and beautiful. I'm driven by the prospect of being creative but also improving people's lives through digital products. I'm excited for the future - there's always something new to learn, room to improve and people to meet." - Cassie </p>
+        </div>
+        <div class="message-right">
+          <form>
+            <div class="close-icon">
+              <img src="img/close.svg" alt="close-icon" onclick="closeDetails()">
+            </div>
+            <br/>
+            <label for="title"><b>Title</b></label><br/>
+            <input type="text" name="Title" required><br/>
+            <br/>
+            <textarea id="emailMentor" class="email-mentor" placeholder="Message" rows="10" cols="30"></textarea>
+            <button type="submit" class="modal-btn">Get in touch</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+      <h6>This website has been created in the framework of a student project.</h6>
+      <a href="https://www.linkedin.com/in/kate-tiong/"><img class="linkedin" src="/Users/katetiong/Documents/FEWD29/Final Project/img/linkedin.svg" alt=""></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
