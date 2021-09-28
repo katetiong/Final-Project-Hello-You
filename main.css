@@ -145,20 +145,20 @@ body {
 }
 
 .circle1 {
-  background-image: url("/Users/katetiong/Documents/FEWD29/Final Project/img/calendar.svg");
+  background-image: url("img/calendar.svg");
   background-position: center;
   background-size: cover;
 }
 
 .circle2 {
-  background-image: url("/Users/katetiong/Documents/FEWD29/Final Project/img/laptop.svg");
+  background-image: url("img/laptop.svg");
   background-position: center;
   background-size: cover;
   align-self: center;
 }
 
 .circle3 {
-  background-image: url("/Users/katetiong/Documents/FEWD29/Final Project/img/Feedback.svg");
+  background-image: url("img/Feedback.svg");
   background-position: center;
   background-size: cover;
   margin: 0 auto;
@@ -391,20 +391,20 @@ body {
 }
 
 .img-1 {
-  background-image: url("/Users/katetiong/Documents/FEWD29/Final Project/img/asian-woman.jpg");
+  background-image: url("img/asian-woman.jpg");
   background-size: cover;
   position: relative;
 }
 
 .img-2 {
-  background-image: url("/Users/katetiong/Documents/FEWD29/Final Project/img/man.jpg");
+  background-image: url("img/man.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
 .img-3 {
-  background-image: url("/Users/katetiong/Documents/FEWD29/Final Project/img/woman.jpg");
+  background-image: url("img/woman.jpg");
   background-size: cover;
   position: relative;
 }
@@ -495,7 +495,7 @@ body {
 .lunch-img {
   display: block;
   margin: 0 auto;
-  background-image: url("/Users/katetiong/Documents/FEWD29/Final Project/img/shocked-koala.jpeg");
+  background-image: url("img/shocked-koala.jpeg");
   background-size: cover;
   background-position: center;
   height: 400px;
