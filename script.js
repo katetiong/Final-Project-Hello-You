@@ -1,16 +1,3 @@
-// const showMessageOne = document.getElementById('mentorMessageOne');
-//
-// function showMentorDetails(){
-//   document.getElementById('mentorOne').classList.toggle('show');
-// }
-//
-// function closeDetails(){
-//   document.getElementById('mentorMessageOne').classList.remove('showMessageOne');
-// }
-//
-// document.getElementById('mentorOne').addEventListener('click', showMentorDetails);
-// document.getElementById('close-trigger').addEventListener('click', closeDetails);
-
 function mentorDetails1() {
   document.getElementById("mentorMessageOne").style.visibility = "visible";
 }
